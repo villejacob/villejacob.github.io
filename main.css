@@ -1,0 +1,39 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.landing {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#background {
+  background-image: url("Background.png");
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+#middleground {
+  background-image: url("Head.png"), url("Silhouette.png");
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#foreground {
+  background-image: url("Hand.png"), url("Book.png");
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
