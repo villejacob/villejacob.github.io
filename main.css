@@ -1,39 +1,32 @@
 html, body {
+  position: absolute;
   height: 100%;
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .landing {
   position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
-#background {
-  background-image: url("Background.png");
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
 }
 
+#background {
+  background: url("Background.png") no-repeat center;
+  background-size: 105%;
+  width: 105%;
+}
+
 #middleground {
-  background-image: url("Head.png"), url("Silhouette.png");
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
+  background: url("Head.png") no-repeat center,
+  url("Silhouette.png") no-repeat center;
+  background-size: 105%;
 }
 
 #foreground {
-  background-image: url("Hand.png"), url("Book.png");
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
+  background: url("Hand.png") no-repeat center, 
+  url("Book.png") no-repeat center;
+  background-size: 105%;
 }
