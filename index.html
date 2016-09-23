@@ -4,29 +4,12 @@
 	<title>Jacob Ville</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function() {
-		var movementStrength0 = 25;
-		var movementStrength1 = 35;
-		var movementStrength2 = 45;
-		var height0 = movementStrength0 / $(window).height();
-		var width0 = movementStrength0 / $(window).width();
-		var height1 = movementStrength1 / $(window).height();
-		var width1 = movementStrength1 / $(window).width();
-		var height2 = movementStrength2 / $(window).height();
-		var width2 = movementStrength2 / $(window).width();
-		$("#foreground").mousemove(function(e){
-			var pageX = e.pageX - ($(window).width() / 2);
-			var pageY = e.pageY - ($(window).height() / 2);
-			var newvalueX0 = width0 * pageX * -1 - 25;
-			var newvalueY0 = height0 * pageY * -1 - 50;
-			var newvalueX1 = width1 * pageX * -1 - 25;
-			var newvalueY1 = height1 * pageY * -1 - 50;
-			var newvalueX2 = width2 * pageX * -1 - 25;
-			var newvalueY2 = height2 * pageY * -1 - 50;
-			$("#foreground").css("background-position", newvalueX0+"px     "+newvalueY0+"px");
-			$("#middleground").css("background-position", newvalueX1+"px     "+newvalueY1+"px");
-			$("#background").css("background-position", newvalueX2+"px     "+newvalueY2+"px");
+	<script src="jquery.parallax.js"></script>
+	<script>
+	jQuery(document).ready(function(){
+		jQuery('#parallax .parallax-layer')
+		.parallax({
+			mouseport: jQuery('#parallax')
 		});
 	});
 	</script>
@@ -36,13 +19,28 @@
 
 <body>
 
-	<div class="landing" id="background"></div>
-	<div class="landing" id="middleground"></div>
-	<div class="landing" id="foreground"></div>
+	<div class="landing-viewport" id="parallax">
+
+		<!-- parallax layers -->
+		<div class="parallax-layer" style="width: 102%; height: 102%;">
+			<img src="Background.png" alt="" style="position: absolute;"/>
+		</div>
+		<div class="parallax-layer" style="width: 103%; height: 103%;">
+			<img src="Middleground.png" alt="" style="position: absolute;"/>
+		</div>
+		<div class="parallax-layer" style="width: 104%; height: 104%;">
+			<img src="Foreground.png" alt="" style="position: absolute;"/>
+		</div>
+
+		<div class="parallax-layer" style="width: 107%; height: 107%;">
+			<img src="Name-Front.png" alt="" style="position: absolute;"/>
+		</div>
+
+	</div>
 
 	<p>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	</p>
