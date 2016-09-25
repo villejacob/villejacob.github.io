@@ -6,7 +6,7 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
 	<script src="jquery.parallax.js"></script>
 	<script>
-	jQuery(document).ready(function(){
+	jQuery(document).onresize(function(){
 		jQuery('#parallax .parallax-layer')
 		.parallax({
 			mouseport: jQuery('#parallax')
@@ -19,31 +19,26 @@
 
 <body>
 
-	<div class="landing-viewport" id="parallax">
+	<div class="landing-viewport" id="parallax" >
 
 		<!-- parallax layers -->
 		<div class="parallax-layer" style="width: 102%; height: 102%;">
-			<img src="Background.png" alt="" style="position: absolute;"/>
+			<img src="Background.png" alt="" style="position: absolute; max-width:100%;"/>
 		</div>
 		<div class="parallax-layer" style="width: 103%; height: 103%;">
-			<img src="Middleground.png" alt="" style="position: absolute;"/>
+			<img src="Middleground.png" alt="" style="position: absolute; max-width:100%;"/>
 		</div>
 		<div class="parallax-layer" style="width: 104%; height: 104%;">
-			<img src="Foreground.png" alt="" style="position: absolute;"/>
+			<img src="Foreground.png" alt="" style="position: absolute; max-width:100%;"/>
 		</div>
-
-		<div class="parallax-layer" style="width: 107%; height: 107%;">
-			<img src="Name-Front.png" alt="" style="position: absolute;"/>
+		<div class="parallax-layer" style="width: 105%; height: 105%;">
+			<img src="Links.png" alt="" style="position: absolute; max-width:100%;"/>
+		</div>
+		<div class="parallax-layer" style="width: 106%; height: 106%;">
+			<img src="Name.png" alt="" style="position: absolute; max-width:100%;"/>
 		</div>
 
 	</div>
-
-	<p>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	</p>
 
 </body>
 </html>
