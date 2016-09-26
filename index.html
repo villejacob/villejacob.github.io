@@ -3,42 +3,46 @@
 <head>
 	<title>Jacob Ville</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-	<script src="jquery.parallax.js"></script>
-	<script>
-	jQuery(document).ready(function(){
-		jQuery('#parallax .parallax-layer')
-		.parallax({
-			mouseport: jQuery('#parallax')
-		});
-	});
-	</script>
-
-
 </head>
 
 <body>
 
-	<div class="landing-viewport" id="parallax" >
+	<div id="container" class="container wrapper">
+		<ul id="scene" class="scene">
 
-		<!-- parallax layers -->
-		<div class="parallax-layer" style="width: 102%; height: 102%;">
-			<img src="Background.png" alt="" style="position: absolute; max-width:100%;"/>
-		</div>
-		<div class="parallax-layer" style="width: 103%; height: 103%;">
-			<img src="Middleground.png" alt="" style="position: absolute; max-width:100%;"/>
-		</div>
-		<div class="parallax-layer" style="width: 104%; height: 104%;">
-			<img src="Foreground.png" alt="" style="position: absolute; max-width:100%;"/>
-		</div>
-		<div class="parallax-layer" style="width: 105%; height: 105%;">
-			<img src="Links.png" alt="" style="position: absolute; max-width:100%;"/>
-		</div>
-		<div class="parallax-layer" style="width: 106%; height: 106%;">
-			<img src="Name.png" alt="" style="position: absolute; max-width:100%;"/>
-		</div>
+			<li class="layer" data-depth="0.20">
+				<div class="subway-car"></div>
+			</li>
 
+			<li class="layer" data-depth="0.40">
+				<div class="primary-figure"></div>
+			</li>
+
+			<li class="layer" data-depth="0.60">
+				<div class="primary-figure-book"></div>
+			</li>
+
+			<li class="layer" data-depth="0.80">
+				<img class="about" src="about.png">
+			</li>
+
+			<li class="layer" data-depth="0.80">
+				<img class="blog" src="blog.png">
+			</li>
+
+			<li class="layer" data-depth="0.90">
+				<img class="name" src="name.png">
+			</li>
+
+		</ul>
 	</div>
+
+	<script src="parallax.js"></script>
+	<script>
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+	</script>
+
 
 </body>
 </html>
