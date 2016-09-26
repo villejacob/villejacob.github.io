@@ -91,11 +91,19 @@ body {
 	left: 0%;
 }
 
+.about:hover {
+	opacity: 0.5;
+}
+
 .blog {
 	position: absolute;
 	min-width: 51px;
 	width: 4.7%;
 	left: 50%;
+}
+
+.blog:hover {
+	opacity: 0.5;
 }
 
 .name {
