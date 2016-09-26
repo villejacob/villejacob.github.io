@@ -75,24 +75,34 @@ body {
 	background-position: top center;
 }
 
+.link {
+	position: absolute;
+	min-width: 200px;
+	width: 14%;
+	height: 10%;
+	top: 68%;
+	right: 12%;
+}
+
 .about {
 	position: absolute;
+	min-width: 70px;
 	width: 6.4%;
-	top: 68%;
-	left: 71%;
+	left: 0%;
 }
 
 .blog {
 	position: absolute;
+	min-width: 51px;
 	width: 4.7%;
-	top: 68%;
-	left: 80%;
+	left: 50%;
 }
 
 .name {
 	position: absolute;
+	min-width: 230px;
 	width: 21%;
 	top: 60%;
-	left: 67%;
+	right: 12%;
 }
 
