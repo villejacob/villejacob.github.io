@@ -77,18 +77,19 @@ body {
 
 .link {
 	position: absolute;
-	min-width: 200px;
-	width: 14%;
+	min-width: 280px;
 	height: 20%;
 	top: 68%;
-	right: 13%;
+	right: 12%;
 }
 
 .about {
 	position: absolute;
 	min-width: 70px;
 	width: 6.4%;
-	left: 0;
+	left: 12%;
+	right: 0;
+	margin: auto;
 }
 
 .about:hover {
@@ -99,15 +100,14 @@ body {
 	position: absolute;
 	min-width: 51px;
 	width: 4.7%;
-	right: 26%;
+	right: 0;
 }
 
 .resume {
 	position: absolute;
 	min-width: 92px;
 	width: 8.3%;
-	top: 28%;
-	left: 16%;
+	left: 0;
 }
 
 .resume:hover {
@@ -122,18 +122,18 @@ body {
 	position: absolute;
 	min-width: 230px;
 	width: 21%;
-	top: 60%;
-	right: 12%;
+	top: 58%;
+	right: 14%;
 }
 
 @media screen and (max-width: 480px) {
 	.subway-car {background-size: auto 100%; background-position: center;}
 	.primary-figure {background-size: 750px; top: 6%; left: 0; right: 0; margin: auto;}
 	.primary-figure-book {background-size: 750px; top: 6%; left: 0; right: 0; margin: auto;}
-	.name {top: 26%; left: 0; right: 0; margin: auto;}
-	.link {top: 80%; width: 85%; left: 0; right: 0; margin: auto;}
-	.about {left: 10%;}
-	.blog {right: 10%;}
-	.resume {top: 45%; left: 0; right: 0; margin: auto;}
+	.name {top: 24%; left: 0; right: 0; margin: auto;}
+	.link {top: 80%; width: 60%; height: 180px; left: 0; right: 0; margin: auto;}
+	.about {content: url("about.png");}
+	.blog {content: url("blog.png");}
+	.resume {content: url("resume.png");}
 }
 
